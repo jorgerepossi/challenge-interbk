@@ -1,5 +1,7 @@
-import { Flex, FlexCol } from "@/components/flex";
 import { TriangleAlert } from 'lucide-react';
+
+// @Components
+import { Flex, FlexCol } from "@/components/flex";
 
 const EmptyList = () => {
     return (

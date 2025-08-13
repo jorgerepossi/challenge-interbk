@@ -1,12 +1,14 @@
 "use client"
+import { useCallback } from "react";
 import { SearchIcon, X } from "lucide-react";
 
 // @/Components
 import { Flex } from "@/components/flex";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+ 
+// @Hooks
 import { usePhrases } from "@/hooks/use-phrases";
-import { useCallback } from "react";
-import { Button } from "../ui/button";
 
 const SearchArea = () => {
     const { state, setSearchTerm } = usePhrases();
@@ -24,8 +26,7 @@ const SearchArea = () => {
         <Flex className="mb-4 border-b p-4">
             <Flex className="relative w-full max-w-md items-center space-x-2">
                 <Flex className="absolute left-2">
-
-                <SearchIcon className="text-muted-foreground" size={20} />
+                    <SearchIcon className="text-muted-foreground" size={20} />
                 </Flex>
                 <Input 
                     placeholder="Buscar frases o usuarios..."

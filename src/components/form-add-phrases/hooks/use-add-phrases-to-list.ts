@@ -8,8 +8,8 @@ import { usePhrases } from "@/hooks/use-phrases"
 
 const useAddPhrasesToList = () => {
     const { addPhrase, state } = usePhrases()
+    const [ characters, setCharacters ] = useState('')
 
-    const [characters, setCharacters] = useState('')
     const handleChangeTextArea = useCallback((e: ChangeEvent<HTMLTextAreaElement>) => {
         return setCharacters(e.target.value)
     }, [])

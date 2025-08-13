@@ -12,14 +12,14 @@ interface NoResultsProps {
 
 const NoResults = ({ searchTerm, onClearSearch }: NoResultsProps) => {
     return (
-        <FlexCol className="items-center justify-center space-y-4 h-full ">
+        <FlexCol className="h-full items-center justify-center space-y-4 ">
             <SearchX size={64}  />
             <FlexCol className="gap-2 text-center">
                 <h3 className="font-medium text-gray-900 text-lg">
                     No se encontraron resultados
                 </h3>
                 <FlexCol>
-                    <p className="text-muted-foreground text-md">
+                    <p className="text-md text-muted-foreground">
                     No hay frases que contengan "{searchTerm}"
                 </p>
                 <p className="text-muted-foreground text-sm">

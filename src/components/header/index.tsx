@@ -8,8 +8,7 @@ const Header = () => {
         <Box className="mb-4 bg-background p-4">
             <header>
                 <Flex className='gap-2' >
-
-               <MessageSquareHeart />  GreatPhrases
+                    <MessageSquareHeart />  GreatPhrases
                 </Flex>
             </header>
         </Box>

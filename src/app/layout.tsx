@@ -24,7 +24,6 @@ export default function RootLayout({
 				<PhraseProvider>
 					{children}
 				</PhraseProvider>
-
 			</body>
 		</html>
 	);

@@ -33,7 +33,7 @@ const ListOfPhrases = () => {
                     <Flex key={phrase.id} className="w-full max-w-[350px] bg-background p-4">
                          <FlexCol className="w-full space-y-4">
                         <FlexCol className="w-full space-y-4">
-                                <Flex className="w-full justify-between items-center">
+                                <Flex className="w-full items-center justify-between">
                                     <p> @{phrase.username} </p>
                                     <Button 
                                     variant={'ghost'} 
@@ -41,17 +41,17 @@ const ListOfPhrases = () => {
                                     onClick={() => deletePhrase(phrase.id)}> <TrashIcon size={16} /> </Button>
                                 </Flex>
                                     <code>
-                                <Flex className='text-muted-foreground bg-muted p-4'>
+                                <Flex className="bg-muted p-4 text-muted-foreground">
 
                                     <Quote size={12} className='rotate-[180deg]' />
-                                    <p className='text-current  text-sm'> ...{phrase.phrase}</p> 
+                                    <p className="text-current text-sm"> ...{phrase.phrase}</p> 
                                     <Quote size={12} />
                                 </Flex>
                                     </code>
                         </FlexCol>
                        
 
-                            <p className="text-xs text-muted-foreground">
+                            <p className="text-muted-foreground text-xs">
                                 {new Date(phrase.created_at).toLocaleDateString('es-ES', {
                                     day: '2-digit',
                                     month: '2-digit',

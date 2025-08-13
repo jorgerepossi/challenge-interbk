@@ -8,8 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button";
 
 // @Hooks
- 
-import useAddPhrasesToList from './hooks/use-add-phrases-to-list';
+ import useAddPhrasesToList from './hooks/use-add-phrases-to-list';
 
 
 
