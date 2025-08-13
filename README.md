@@ -1,29 +1,72 @@
-# Create T3 App
+# GreatPhrases
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+###
+A modern React application for managing and organizing your favorite phrases. Built with Next.js 14, TypeScript, and featuring real-time search, persistent storage, and a responsive design.
 
-## What's next? How do I make an app with this?
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## 🚀 Features
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- **Add & Manage Phrases**: Create and organize your favorite quotes and thoughts
+- **Real-time Search**: Filter phrases instantly as you type
+- **Persistent Storage**: Your phrases are automatically saved to localStorage
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **TypeScript**: Full type safety throughout the application
+- **Modern UI**: Clean interface built with Tailwind CSS and shadcn/ui components
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **State Management**: React Context API with useReducer
+- **Icons**: Lucide React
+- **Storage**: localStorage for data persistence
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## 📋 Prerequisites
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+````
+Node.js v20.11.0 or higher
+````
 
-## How do I deploy this?
+## 🔧 Installation
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Clone the repository and install dependencies using your preferred package manager:
+
+```bash
+# Using npm
+npm install
+
+# Using pnpm
+pnpm install
+
+# Using bun
+bun install
+````
+
+### 🚦 Running the Project
+
+````
+# Using npm
+npm run dev
+
+# Using pnpm
+pnpm dev
+
+# Using bun
+bun dev
+`````
+
+
+
+Open http://localhost:3000 in your browser to see the application.
+
+ Usage
+
+##### - Add a Phrase: Enter your name and phrase in the form, then click "Agregar una nueva frase"
+##### - Search: Use the search bar to filter phrases by content or username
+##### -  Delete: Click the trash icon on any phrase card to remove it
+##### -  Persistence: Your phrases are automatically saved and will persist between sessions
+
+
