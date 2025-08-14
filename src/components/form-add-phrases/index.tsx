@@ -10,11 +10,10 @@ import { Button } from "@/components/ui/button";
 // @Hooks
  import useAddPhrasesToList from './hooks/use-add-phrases-to-list';
 
-
-
 const FormAddPhrases = () => {
     const {
         state,
+        error,
         characters,
         handleChangeTextArea,
         handleOnSubmit
@@ -36,13 +35,16 @@ const FormAddPhrases = () => {
                                 name='phrase'
                                 onChange={handleChangeTextArea}
                                 placeholder="Escribe tu frase aquí..."
-                                maxLength={200} />
+                                maxLength={200}  />
                             <Flex className="justify-end">
                                 <p className="text-xs text-zinc-500">{characters.length} caracteres</p>
                             </Flex>
                         </FlexCol>
                     </FlexCol>
                 </FlexCol>
+                {error && (
+                <p className="text-red-500 text-sm">{error}</p>
+            )}
                 <Button 
                 type='submit' 
                 className='hover:cursor-pointer'
